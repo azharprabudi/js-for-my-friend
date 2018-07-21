@@ -13,7 +13,7 @@ akan mengembalikan nilai [2, 4, 6, 8, 10];
 
 untuk mengecek hasilnya benar atau tidak jalankan command berikut di dalam directory project anda
 
-node ./task/array/test-task-arrayy-p1.js
+npm run jest ./task/array/test-task-arrayy-p1/index.js
 */
 
 const taskArrayP1 = arrayInteger => {};
