@@ -13,9 +13,25 @@ akan mengembalikan nilai [2, 4, 6, 8, 10];
 
 untuk mengecek hasilnya benar atau tidak jalankan command berikut di dalam directory project anda
 
-npm run jest ./task/array/test-task-arrayy-p1/index.js
+npm run test ./task/array/task-array-p1/test-task-array-p1.js
+
 */
 
-const taskArrayP1 = arrayInteger => {};
+const taskArrayP1 = arr => {
+  let length = arr.length;
+
+  for (var i = 0; i < length; i++) {
+    // cara ke 1
+    arr[i] = arr[i] * 2;
+
+    // cara ke 2
+    // newArr.push(arr[i] * 2);
+
+    // cara ke 3
+    // newArr = newArr.concat(arr[i] * 2);
+  }
+
+  return arr;
+};
 
 module.exports = taskArrayP1;
