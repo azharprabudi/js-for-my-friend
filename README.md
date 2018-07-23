@@ -13,4 +13,4 @@ knowledge you understandiing about the code
 
 For the task has name 1p - xxp, thats meaning this task for practical. To more understanding what do you know
 
-## For the teori about the javascript you can go the folder basic, and find the content what you want to learn
+## For the teori about the javascript you can go the folder basic, and find the content what you want to learn ##
