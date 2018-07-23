@@ -21,6 +21,14 @@ untuk mengecek hasilnya benar atau tidak jalankan command berikut di dalam direc
 npm run jest ./task/array/test-task-arrayy-p2/index.js
 */
 
-const taskArrayP2 = arrayInteger => {};
+const taskArrayP2 =arr => {
+ let length = arr.length;
+ let newArr = [] ;
+ 
+ for ( var i = length ; i > 0 ; i--){
+     newArr.push(arr[i-1] * 2);
+ }
+ return newArr;
+};  
 
 module.exports = taskArrayP2;
