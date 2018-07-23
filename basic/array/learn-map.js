@@ -22,12 +22,12 @@ const learnMap = () => {
     { name: "zahra", age: 21, city: "jakarta" }
   ];
 
-  arrayObject = arrayObject.map(item =>
+  var modifArrayObject = arrayObject.map(item =>
     Object.assign({}, item, { age: item.age + 2 })
   );
 
-  console.log(arrayObject);
-  return arrayObject;
+  console.log(modifArrayObject);
+  return modifArrayObject;
 };
 
 learnMap();
