@@ -26,7 +26,7 @@ const getMinMax = (arr) => {
 //             max = arr[i];
 //         }
 //     }
-//     return [min,max];
+//     return [min,max]
 
 
 // CARA 2
