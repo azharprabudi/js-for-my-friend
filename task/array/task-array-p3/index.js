@@ -12,6 +12,40 @@ npm run jest ./task/array/task-array-p3/test.js
 
 */
 
-const getMinMax = arr => {};
+const getMinMax = (arr) => {
+    // let length = arr.length;
+    // max = -1;
+    // min = 10000;
+
+// CARA 1
+//     for ( var i = 0 ; i < length ; i++){
+//         if(arr[i] < min ){
+//             min = arr[i];
+//         }
+//         if(arr[i] > max){
+//             max = arr[i];
+//         }
+//     }
+//     return [min,max];
+
+
+// CARA 2
+    let length = arr.length;
+    let array = [10000 , -1];
+
+    for (var i = 0 ; i < length ;i++){
+        if(arr[i] < array[0]){
+            array[0]=arr[i];
+        }
+        if (arr[i] > array[1]){
+            array[1]=arr[i];
+        }
+    }
+    return array;
+
+
+};
+
+
 
 module.exports = getMinMax;
