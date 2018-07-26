@@ -27,19 +27,14 @@ const learnMap = () => {
     { name: "zahra", age: 21, city: "bandung" }
   ];
 
-  /* modif = [{name: 'azhar' }]*/
-  var modifArrayObject = arrayObject.filter(item => {
-    if (item.name == "zuli") {
-      return item;
-    }
-  });
-
-  /* modif = [{name: 'azhar' }]*/
-  // var modifArrayObject = arrayObject.filter(
-  //   item => item.name === "azhar" || item.name === "siti"
-  // );
-
-  return modifArrayObject;
+  /* map bisa memodif data dalam array seperti ini */
+  return arrayObject.map(item =>
+    Object.assign({}, item, {
+      name: item.name.concat(" modif"),
+      age: item.age + 3,
+      city: item.city.concat(" modif")
+    })
+  );
 };
 
 console.log(learnMap());

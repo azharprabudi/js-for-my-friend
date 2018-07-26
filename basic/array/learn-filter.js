@@ -15,17 +15,29 @@ arrayObject = arrayObject.filter(item => item.age < 19); // akan menghasilkan []
 */
 
 const learnFilter = () => {
-  var arrayInteger = [1, 2, 3, 4, 5, 6];
-  var arrayFilter = arrayInteger.filter(item => {
-    if (item >= 6) {
+  var arrayObject = [
+    { name: "azhar", age: 21, city: "jakarta" },
+    { name: "azhar", age: 21, city: "jakarta" },
+    { name: "siti", age: 21, city: "jakarta" },
+    { name: "rian", age: 21, city: "jakarta" },
+    { name: "zahra", age: 21, city: "bandung" }
+  ];
+
+  // penulisan 1 menggunakan return, perhatikan tanda { }
+  var modifArrayObject = arrayObject.filter(item => {
+    if (item.name == "zuli") {
       return item;
     }
   });
 
-  console.log(arrayFilter);
-  return arrayFilter;
+  // penulisan 2 tanpa menggunakan return
+  // var modifArrayObject = arrayObject.filter(
+  //   item => item.name === "azhar" || item.name === "siti"
+  // );
+
+  return modifArrayObject;
 };
 
-learnFilter();
+console.log(learnFilter());
 
 module.exports = learnFilter;
