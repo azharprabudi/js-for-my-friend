@@ -16,7 +16,11 @@ arrayObject = arrayObject.filter(item => item.age < 19); // akan menghasilkan []
 
 const learnFilter = () => {
   var arrayInteger = [1, 2, 3, 4, 5, 6];
-  var arrayFilter = arrayInteger.filter(item => item >= 6);
+  var arrayFilter = arrayInteger.filter(item => {
+    if (item >= 6) {
+      return item;
+    }
+  });
 
   console.log(arrayFilter);
   return arrayFilter;

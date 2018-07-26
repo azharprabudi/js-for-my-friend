@@ -7,6 +7,10 @@ Contoh 1 :
 var arrayNumber = [5, 4, 3, 2];
 arrayNumber = arrayNumber.map(item => item * 2); // maka akan menghasilkan [10, 8, 6, 4]
 
+arrayNumber.map(function(item, index) {
+  
+})
+
 Contoh 2 :
 
 var arrayObject = [{ name: 'azhar', age: 21 }, { name: 'siti', age: 21 }];
@@ -17,19 +21,27 @@ arrayObject = arrayObject.map(item => Object.assign({}, item, {age: item.age + 2
 const learnMap = () => {
   var arrayObject = [
     { name: "azhar", age: 21, city: "jakarta" },
+    { name: "azhar", age: 21, city: "jakarta" },
     { name: "siti", age: 21, city: "jakarta" },
     { name: "rian", age: 21, city: "jakarta" },
-    { name: "zahra", age: 21, city: "jakarta" }
+    { name: "zahra", age: 21, city: "bandung" }
   ];
 
-  var modifArrayObject = arrayObject.map(item =>
-    Object.assign({}, item, { age: item.age + 2 })
-  );
+  /* modif = [{name: 'azhar' }]*/
+  var modifArrayObject = arrayObject.filter(item => {
+    if (item.name == "zuli") {
+      return item;
+    }
+  });
 
-  console.log(modifArrayObject);
+  /* modif = [{name: 'azhar' }]*/
+  // var modifArrayObject = arrayObject.filter(
+  //   item => item.name === "azhar" || item.name === "siti"
+  // );
+
   return modifArrayObject;
 };
 
-learnMap();
+console.log(learnMap());
 
 module.exports = learnMap;
