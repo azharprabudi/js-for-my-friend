@@ -21,7 +21,30 @@ untuk menjalankan test silahkan copas command berikut
 npm run test ./task/array/task-array-p4/test.js
 
 */
+[
+    "zahra asri septia",
+    "nur agustin",
+    "ade ayu andini",
+    "fernanda racmadini",
+  ]
+  "ade ayu andini"
+  
 
-const findName = (listName, name) => {};
+const findName = (listName, name) => {
+    let arr = listName ;
+    let length = arr.length;
+    let isFind = '';
+
+    for (var i = 0; i < length ; i++) {
+        if(arr[i] == name ) {
+            isFind = 'KETEMU';        
+            break;
+        } else {
+            isFind = 'TIDAK KETEMU';
+        }
+    }
+    return isFind;
+};
+
 
 module.exports = findName;
