@@ -21,6 +21,28 @@ npm run jest ./task/string/task-string-p5/test.js
 Happy Coding
 */
 
-const reverseString = str => {};
+const reverseString = str => {
+
+let length = str.length;
+let tmp = "";
+let kiri = 0;
+let kanan = length - 1; //3
+
+while (kiri <= kanan){
+        
+       
+        if ( kanan == kiri){
+            tmp += str.charAt(kiri);
+        }
+        else{
+            tmp += str.charAt(kiri); 
+            tmp += str.charAt(kanan);
+        }
+        kiri++;
+        kanan--;
+
+}
+return tmp;
+};
 
 module.exports = reverseString;
