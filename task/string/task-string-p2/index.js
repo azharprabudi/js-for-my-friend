@@ -19,29 +19,15 @@ npm run test ./task/string/task-string-p2/test.js
 
 */
 
-
 const square = n => {
-
-// let tmp ='';
-// for(let i = n ; i < n ; i++){
-//  for (let j = 1 ; j <= n ; j++){
-//   tmp += j  ;
-//  }
-//  tmp += ('\n');
-// }
-// return tmp;
-// };
-
-//kebalikan dimulai dari 6 jadi output 654321
-
-let tmp ='';
-
-for (let i = n ; i >0 ;i--){
-  for(let j = n ; j> 0 ;j--){
-    tmp += j;
+  let tmp = "";
+  for (let i = n; i < n; i++) {
+    for (let j = 1; j <= n; j++) {
+      tmp += j;
+    }
+    tmp += "\n";
   }
-  tmp += ('\n');
-}
-return tmp;
+  return tmp;
 };
+
 module.exports = square;
