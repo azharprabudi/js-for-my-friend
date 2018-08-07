@@ -20,7 +20,15 @@ happy coding
 */
 
 const reverseRectangle = n => {
-  return;
+  let tmp ="";
+
+  for (let i=0; i<n; i++){
+    for(let j=1; j<=n-i ; j++){
+     tmp += j;
+    }
+    tmp +="\n";
+  }
+  return tmp;
 };
 
 module.exports = reverseRectangle;
