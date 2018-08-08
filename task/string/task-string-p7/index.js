@@ -24,6 +24,26 @@ jajarGenjang(6, 16, 6);
 ***********
 */
 
-const jajarGenjang = (nRow, nCol, startAt) => {};
+const jajarGenjang = (nRow, nCol, startAt) => {
+  let k = nCol;
+  let tmp = "";
+  for(let i=0; i<nRow; i++){
+    for(let j=1; j <= nCol ; j++){
+      if ( j>=startAt && j<=k){
+        tmp += '*';
+      } else {
+        tmp += ' ';
+      }
+    }
+    tmp += "\n";
+    k--;
+    startAt--;      
+}
+  console.log(tmp);
+  return tmp;
+
+};
+
+jajarGenjang(3,5,3);
 
 module.exports = jajarGenjang;
