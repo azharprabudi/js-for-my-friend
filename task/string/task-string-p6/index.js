@@ -32,6 +32,23 @@ doubleRectangle(11, 6);
 
 */
 
-const solution = (nRow, nCol) => {};
+const doubleRectangl = (nRow, nCol) => {
+    let tmp ="";
+    for (let i = 0; i < nRow; i++) {
+        let col = nCol - i;
+        if (i >= Math.ceil(nRow / 2)) {
+            col = Math.abs(nCol - i) + 2;
+        }
+        for (let j = 1; j <= col; j++) {
+            tmp += j;
+        }
+        tmp += '\n';
+    }
+    console.log(tmp);
+    return tmp;
+};
 
-module.exports = solution;
+doubleRectangl(11, 6);
+
+
+module.exports = doubleRectangl;
